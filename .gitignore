@@ -1,34 +1,67 @@
-# Gradle files
-.gradle/
+# ─────────────────────────────────────────
+#  Python
+# ─────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pkl
+*.sqlite
+*.db
+
+# Environment
+.env
+.env.*
+*.env
+venv/
+.venv/
+
+# Byte-compiled / optimized / DLL files
+*.pyc
+*.pyo
+*.pyd
+*.so
+
+# Distribution / packaging
 build/
+dist/
+*.egg-info/
+.eggs/
 
-# Local configuration file (sdk path, etc)
-local.properties
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+pytest_cache/
+.pytest_cache/
+.mypy_cache/
+dmypy.json
+.pytype/
+.pyre/
 
-# Log/OS Files
+# IDE / editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
 *.log
 
-# Android Studio generated files and folders
-captures/
-.externalNativeBuild/
-.cxx/
-*.aab
-*.apk
-output-metadata.json
+# Alembic
+alembic/versions/*_tmp*.py
 
-# IntelliJ
-*.iml
-.idea/
-misc.xml
-deploymentTargetDropDown.xml
-render.experimental.xml
+# OS
+.DS_Store
+Thumbs.db
 
-# Keystore files
-*.jks
-*.keystore
+# Docker
+docker-compose.override.yml
+*.pid
 
-# Google Services (e.g. APIs or Firebase)
-google-services.json
-
-# Android Profiling
-*.hprof
+# Misc
+__snapshot__/
