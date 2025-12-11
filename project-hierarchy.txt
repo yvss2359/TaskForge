@@ -1,0 +1,65 @@
+TaskForge
+├─ backend
+│  ├─ alembic
+│  │  ├─ README
+│  │  ├─ __pycache__
+│  │  │  └─ env.cpython-311.pyc
+│  │  ├─ env.py
+│  │  ├─ script.py.mako
+│  │  └─ versions
+│  │     
+│  ├─ alembic.ini
+│  ├─ app
+│  │  ├─ __pycache__
+│  │  │  └─ main.cpython-311.pyc
+│  │  ├─ api
+│  │  │  └─ v1
+│  │  │     ├─ __pycache__
+│  │  │     │  ├─ projects.cpython-311.pyc
+│  │  │     │  ├─ router.cpython-311.pyc
+│  │  │     │  ├─ tasks.cpython-311.pyc
+│  │  │     │  └─ users.cpython-311.pyc
+│  │  │     ├─ projects.py
+│  │  │     ├─ router.py
+│  │  │     ├─ tasks.py
+│  │  │     └─ users.py
+│  │  ├─ core
+│  │  │  ├─ __pycache__
+│  │  │  │  └─ config.cpython-311.pyc
+│  │  │  ├─ config.py
+│  │  │  └─ security.py
+│  │  ├─ crud
+│  │  │  ├─ __pycache__
+│  │  │  │  ├─ crud_project.cpython-311.pyc
+│  │  │  │  ├─ crud_task.cpython-311.pyc
+│  │  │  │  └─ crud_user.cpython-311.pyc
+│  │  │  ├─ crud_project.py
+│  │  │  ├─ crud_task.py
+│  │  │  └─ crud_user.py
+│  │  ├─ db
+│  │  │  ├─ __pycache__
+│  │  │  │  ├─ base.cpython-311.pyc
+│  │  │  │  ├─ seed.cpython-311.pyc
+│  │  │  │  └─ session.cpython-311.pyc
+│  │  │  ├─ base.py
+│  │  │  ├─ seed.py
+│  │  │  └─ session.py
+│  │  ├─ main.py
+│  │  ├─ models
+│  │  │  ├─ __pycache__
+│  │  │  │  ├─ project.cpython-311.pyc
+│  │  │  │  ├─ task.cpython-311.pyc
+│  │  │  │  └─ user.cpython-311.pyc
+│  │  │  ├─ project.py
+│  │  │  ├─ task.py
+│  │  │  └─ user.py
+│  │  └─ schemas
+│  │     ├─ __pycache__
+│  │     │  ├─ project.cpython-311.pyc
+│  │     │  └─ task.cpython-311.pyc
+│  │     ├─ project.py
+│  │     ├─ task.py
+│  │     └─ user.py
+│  ├─ requirements.txt
+│  └─ seed.py
+├─ docker-compose.yml

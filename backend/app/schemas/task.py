@@ -1,8 +1,19 @@
-from pydantic import BaseModel
+from typing import Optional
+from sqlmodel import SQLModel
 
-class TaskCreate(BaseModel):
-    name: str
+class TaskBase(SQLModel):
+    title: str
+    description: Optional[str] = None
+    status: str = "todo"
 
-class TaskRead(TaskCreate):
+class TaskCreate(TaskBase):
+    pass  # pas de project_id ici
+
+class TaskRead(TaskBase):
     id: int
-    owner_id: int
+    project_id: int
+
+class TaskUpdate(SQLModel):
+    title: Optional[str] = None
+    description: Optional[str] = None
+    status: Optional[str] = None

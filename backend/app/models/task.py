@@ -1,4 +1,4 @@
-from sqlmodel import SQLModel, Field
+from sqlmodel import SQLModel, Field, Relationship
 from typing import Optional
 
 class Task(SQLModel, table=True):
@@ -6,4 +6,11 @@ class Task(SQLModel, table=True):
     title: str
     description: Optional[str] = None
     status: str = "todo"
-    project_id: int
+    project_id: int = Field(foreign_key="project.id")
+
+    # Reverse relationship towards Project (forward reference)
+    project: Optional["Project"] = Relationship(back_populates="tasks")
+
+from typing import TYPE_CHECKING
+if TYPE_CHECKING:
+    from app.models.project import Project
